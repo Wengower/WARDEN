@@ -1,0 +1,14 @@
+{
+  "dataset": "chest",
+  "config": "B1",
+  "P": 52,
+  "N": 255,
+  "signature_count": 2,
+  "dna_length": 130,
+  "parity_bits": 3,
+  "transform": "column_first",
+  "input_sha256": "08943e225e393a05c409c49ed34906d91da9e795bcc4d191c7544b1612d43fd8",
+  "shared_table_sha256": "6fcafa909442fd9efc97dc8792ba190283ce2b0a91a069eccd50a33d0beb4a79",
+  "oligos_sha256": "b5efe3c9efa25aa3da08118da14b514bdf81897d8c5668eca96801205857bbe4",
+  "status": "archived_encoding_from_signature_ablation_20260903"
+}

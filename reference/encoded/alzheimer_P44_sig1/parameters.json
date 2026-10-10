@@ -1,0 +1,14 @@
+{
+  "dataset": "alzheimer",
+  "config": "B1",
+  "P": 44,
+  "N": 255,
+  "signature_count": 1,
+  "dna_length": 130,
+  "parity_bits": 3,
+  "transform": "row_first",
+  "input_sha256": "9da11e4a6c030ffbf3a047850ec48a3d5de6d1f3ee64001b3d328fb56a67f2e7",
+  "shared_table_sha256": "769682c66e39240fb797f64a46e00a4f9837bd22a5fd67fd686291bd851ae883",
+  "oligos_sha256": "8fb5247182ac91cab22e015b4c55f8d9d1e9fcb45833c715cff2f5ff7c7215ce",
+  "status": "archived_encoding_from_signature_ablation_20260903"
+}

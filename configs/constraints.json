@@ -1,0 +1,123 @@
+{
+  "motif_sets": {
+    "M13": [
+      "AGCT",
+      "GACGC",
+      "CAGCAG",
+      "GATATC",
+      "GGTACC",
+      "CTGCAG",
+      "GAGCTC",
+      "GTCGAC",
+      "AGTACT",
+      "ACTAGT",
+      "GCATGC",
+      "AGGCCT",
+      "TCTAGA"
+    ],
+    "ML10": [
+      "TATAAA",
+      "TTTATA",
+      "GAAGAC",
+      "GTCTTC",
+      "GGTCTC",
+      "GAGACC",
+      "CGTCTC",
+      "GAGACG",
+      "GCGATG",
+      "CATCGC"
+    ]
+  },
+  "ML10_note": "Final ML10 includes TTTATA; the corrected A1/D1-D3 results are used.",
+  "settings": {
+    "A1": {
+      "h": 8,
+      "window": 0,
+      "gc_min": null,
+      "gc_max": null,
+      "motifs": []
+    },
+    "A2": {
+      "h": 4,
+      "window": 6,
+      "gc_min": 2,
+      "gc_max": 4,
+      "motifs": []
+    },
+    "A3": {
+      "h": 4,
+      "window": 6,
+      "gc_min": 2,
+      "gc_max": 4,
+      "motifs": [
+        "M13"
+      ]
+    },
+    "B1": {
+      "h": 4,
+      "window": 10,
+      "gc_min": 4,
+      "gc_max": 6,
+      "motifs": [
+        "M13"
+      ]
+    },
+    "B2": {
+      "h": 4,
+      "window": 10,
+      "gc_min": 5,
+      "gc_max": 5,
+      "motifs": [
+        "M13"
+      ]
+    },
+    "C1": {
+      "h": 3,
+      "window": 6,
+      "gc_min": 2,
+      "gc_max": 4,
+      "motifs": [
+        "M13"
+      ]
+    },
+    "C2": {
+      "h": 4,
+      "window": 6,
+      "gc_min": 2,
+      "gc_max": 4,
+      "motifs": [
+        "ML10"
+      ]
+    },
+    "D1": {
+      "h": 4,
+      "window": 6,
+      "gc_min": 2,
+      "gc_max": 4,
+      "motifs": [
+        "M13",
+        "ML10"
+      ]
+    },
+    "D2": {
+      "h": 4,
+      "window": 8,
+      "gc_min": 3,
+      "gc_max": 5,
+      "motifs": [
+        "M13",
+        "ML10"
+      ]
+    },
+    "D3": {
+      "h": 4,
+      "window": 10,
+      "gc_min": 4,
+      "gc_max": 6,
+      "motifs": [
+        "M13",
+        "ML10"
+      ]
+    }
+  }
+}

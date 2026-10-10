@@ -1,0 +1,17 @@
+{
+  "scope": "Audit-time environment, not original table-building environment",
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "executable": "/home/user/yyxqf/myconda/miniconda3/envs/warden-aeon-eval/bin/python",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "utc_started": "2026-10-01T10:26:57Z",
+  "command": [
+    "/home/user/warm/WARDEN_shared_table_audit_20261001/collect_shared_table_evidence.py",
+    "--datasets-root",
+    "/home/user/wy-b/datasets"
+  ],
+  "dependency_error": null,
+  "packages": {
+    "numpy": "2.2.6",
+    "Pillow": "12.3.0"
+  }
+}

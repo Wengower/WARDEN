@@ -1,0 +1,14 @@
+[
+  {
+    "filename": "alzheimer.zip",
+    "exists": true,
+    "size_bytes": 123881080,
+    "sha256": "96ffbaf43ca80905212c900e5b594e9b0e31acf0d55d34f61d2fdb704b6f45b0"
+  },
+  {
+    "filename": "nashidul_cxr.zip",
+    "exists": true,
+    "size_bytes": 880475689,
+    "sha256": "792f4ab920b3486e858ad84957c1b4271aa27db9a0d9f8d6b53ba69314dd687e"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "alzheimer": {
+    "data": "data/alzheimer.bin",
+    "source_image": "data/source_images/alzheimer_src.jpg",
+    "height": 128,
+    "width": 128,
+    "transform": "row_first",
+    "default_P": 44,
+    "shared_table": "shared_tables/alzheimer.json",
+    "input_sha256": "9da11e4a6c030ffbf3a047850ec48a3d5de6d1f3ee64001b3d328fb56a67f2e7",
+    "shared_table_sha256": "769682c66e39240fb797f64a46e00a4f9837bd22a5fd67fd686291bd851ae883",
+    "original_filename_reported": "mild_595.jpg",
+    "upstream_download_url": null,
+    "data_redistribution_permission": "AUTHOR_CONFIRMATION_REQUIRED"
+  },
+  "chest": {
+    "data": "data/chest.bin",
+    "source_image": "data/source_images/chest_src.png",
+    "height": 299,
+    "width": 299,
+    "transform": "column_first",
+    "default_P": 52,
+    "shared_table": "shared_tables/chest.json",
+    "input_sha256": "08943e225e393a05c409c49ed34906d91da9e795bcc4d191c7544b1612d43fd8",
+    "shared_table_sha256": "6fcafa909442fd9efc97dc8792ba190283ce2b0a91a069eccd50a33d0beb4a79",
+    "original_filename_reported": "COVID-1734.png",
+    "upstream_download_url": null,
+    "data_redistribution_permission": "AUTHOR_CONFIRMATION_REQUIRED"
+  }
+}
