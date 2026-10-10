@@ -122,11 +122,4 @@ These results describe the tested configurations, not each method's optimum.
   for documentation/package simplification; cross-platform identity is not proven.
 - No automatic resume, plot generation or result-comparison service is
   included. [RUNNING.md](RUNNING.md) explains the output fields and comparisons.
-- Code rates exclude shared-table storage and primers. An extract's
-  `_archive.original_sha256` identifies its full original record;
-  `SHA256SUMS.json` checks the bundled files themselves. Replacing documentation
-  requires updating that manifest; older documentation hashes will no longer match.
-- The code license remains pending. Authors must also check third-party data
-  redistribution terms before public release. If images cannot be redistributed,
-  provide exact acquisition/preprocessing instructions and hashes instead;
-  do not claim immediate reproduction after silently removing required inputs.
+- Code rates exclude shared-table storage and primers. 
