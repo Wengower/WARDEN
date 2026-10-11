@@ -1,16 +1,18 @@
 # Running WARDEN
 
 Install the dependencies as described in [README.md](README.md). This guide
-provides one complete paper-trial example and the parameter changes needed
-for Figures 2 and 3. Run commands from the repository root in Bash on Linux
-or WSL. The example uses the full Alzheimer input, not a small smoke test;
-it can take substantial CPU time. A GPU is not required.
+provides one complete paper-trial example. The remaining experiment 
+configurations are listed in configs/paper_cases.json. Run commands from 
+the repository root in Bash on Linuxor WSL. The example uses the full 
+Alzheimer input, not a small smoke test;it can take substantial CPU 
+time. A GPU is not required.
 
 ## One complete example
 
 This example uses Alzheimer, B1 constraints, one path-check base, RS N=255
-and P=44 (K=211), nominal 1% IDS, no dropout and seed 201. It encodes the
-input once, simulates the noisy channel, decodes, and reports exact recovery.
+and P=44 (K=211), nominal 1% IDS, no dropout and seed 201. It encodes the 
+input once, simulates the noisy channel, decodes the received sequences, 
+and reports whether the original input is recovered exactly.
 
 ```bash
 (
@@ -85,11 +87,19 @@ python -c 'import json,sys; r=json.load(open(sys.argv[1], encoding="utf-8")); pr
 )
 ```
 
-Outputs are `outputs/example_alzheimer_s201/encoded/oligos.csv`, the adjacent
-`summary.json`, and `outputs/example_alzheimer_s201/result.json`. 
+The encoded sequences and encoding summary are saved to
+`outputs/example_alzheimer_s201/encoded/oligos.csv` and
+`outputs/example_alzheimer_s201/encoded/summary.json`, respectively.
+Decoding and recovery results are saved to
+`outputs/example_alzheimer_s201/result.json`.
 
 ## Parameters
 
-The experiment list is configs/paper_cases.json. The parameters for each experimen
-t type are specified below and should be configured according to the corresponding
-mappings.
+## Parameters
+
+The paper's experiment configurations are listed in
+[configs/paper_cases.json](configs/paper_cases.json).
+The example above runs one Alzheimer trial. To reproduce another trial,
+use its corresponding settings in the encoding and decoding commands
+and choose a separate output directory. The channel seeds used in the
+paper are 201, 202, and 203.
