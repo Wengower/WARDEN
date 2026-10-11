@@ -4,10 +4,12 @@ WARDEN uses byte frequencies to encode data under configurable DNA sequence
 constraints, with path-check bases for inner decoding and column-wise
 Reed-Solomon (RS) coding for recovery across strands.
 
-This repository contains WARDEN source code, the two paper inputs, shared
-frequency tables and final experimental results. Explorer, DNA-Aeon and
-Gungnir are provided as results and configuration records only; their
-implementations are not included.
+This release contains WARDEN source code, the two paper inputs, shared
+frequency tables, corpus audit evidence and reference DNA encodings.
+WARDEN experiment configurations and reference values are provided in
+`configs/paper_cases.json`. Experimental results and comparisons with
+Explorer, DNA-Aeon and Gungnir are reported in the paper and its supplementary
+tables; third-party baseline implementations are not included in this release.
 
 ## Installation
 
@@ -20,25 +22,32 @@ python experiments/test_us_mod256_ids.py --help
 python experiments/dataset_shared_table.py --help
 ```
 
-See [RUNNING.md](RUNNING.md) for one complete encoding/decoding example, the
-Figure 2 and Figure 3 parameter tables, and result comparisons. The full case
-list remains in `configs/paper_cases.json`; it is not an executable script.
+See [RUNNING.md](RUNNING.md) for a complete encoding, channel-simulation
+and decoding example. Settings and reference values for the 20 constraint
+encodings, 36 path-check ablation trials and 45 recorded RS recovery trials
+are listed in [configs/paper_cases.json](configs/paper_cases.json).
+This JSON file is a case list, not an executable script. Use each case's
+settings to adapt the example commands and choose a separate output directory.
 Commands use Bash on Linux or WSL. Full runs can take many CPU-hours;
 a GPU is not required.
 
+Some entries in `configs/paper_cases.json` retain paths under `results/`
+that identify original archived result files. Those files are not bundled
+in this release, and those paths are not required inputs to the example
+commands.
+
 ## Repository contents
 
-| Path | Contents |
-| --- | --- |
-| `codec/` | Core constrained entropy coding and decoding modules |
-| `experiments/` | Encoding, noisy-channel evaluation/RS recovery and shared-table generation |
-| `configs/` | Input hashes, constraint definitions and the paper experiment list |
-| `data/` | Two source images, raw pixel-byte streams and shared-table audit evidence |
-| `shared_tables/` | The two frequency models used in the experiments |
-| `reference/` | Archived WARDEN DNA encodings for checking new runs |
-| `results/warden/` | Final WARDEN summaries and per-trial aggregate records |
-| `results/comparison/` | Final comparison tables, trial records and protocol parameters |
-| `requirements.txt` | Runtime dependencies |
+| Path               | Contents                                                     |
+| ------------------ | ------------------------------------------------------------ |
+| `codec/`           | Core constrained entropy coding and decoding modules         |
+| `experiments/`     | Encoding, noisy-channel evaluation/RS recovery and shared-table generation |
+| `configs/`         | Input hashes, constraint definitions and the paper experiment list |
+| `data/`            | Two source images, raw pixel-byte streams and shared-table audit evidence |
+| `shared_tables/`   | The two frequency models used in the experiments             |
+| `reference/`       | Archived WARDEN DNA encodings for checking new runs          |
+| `RUNNING.md`       | Complete example commands and guidance for other experiment settings |
+| `requirements.txt` | Runtime dependencies                                         |
 
 ## Input data and shared tables
 
