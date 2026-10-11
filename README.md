@@ -55,5 +55,4 @@ identifies the following local corpora used to check the shared tables:
 audit reports and environment/archive checksums. 
 
 The full corpora are not bundled. The two-input experiments use the saved
-tables in `shared_tables/`; see [RUNNING.md](RUNNING.md#shared-table-checks)
-for the optional builder and audit evidence. 
+tables in `shared_tables/`. 
