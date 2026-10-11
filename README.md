@@ -39,8 +39,6 @@ a GPU is not required.
 | `results/warden/` | Final WARDEN summaries and per-trial aggregate records |
 | `results/comparison/` | Final comparison tables, trial records and protocol parameters |
 | `requirements.txt` | Runtime dependencies |
-| `SHA256SUMS.json` | Packaged-file checksums |
-| `LICENSE_PENDING.md` | Pending code-license decision; not an open-source license |
 
 ## Input data and shared tables
 
